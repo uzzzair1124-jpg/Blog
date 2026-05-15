@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(218, 215, 215);
+    width: 100%;
+        margin: 0;
+    padding: 0;
+}
+.navbar{
+    width: 100%;
+    padding-block: 12px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 35px;
+    align-items: center;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 30px ;
+}
+a{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+.main{
+    display: flex;
+    padding: 35px 20px 25px 20px;
+    gap: 25px;
+    width: 100%;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: fit-content;
+    background-color: aliceblue;
+    padding: 17px;
+}
+.left> img{
+    width: 100%;
+    height: 450px;
+}
+.left> h1{
+    margin-top: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.left> span{
+    display: flex;
+    margin-block: 20px;
+    gap: 15px;
+}
+.left>span >p{
+    color: rgb(106, 105, 105);
+}
+.left> p{
+    color: rgb(35, 35, 35);
+    font-size: large;
+}
+.right{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding: 17px 25px;
+    width: 30%;
+    align-items: center;
+}
+.right> img{
+    width: 100%;
+    height: 200px;
+    margin-block: 10px;
+}
+.active{
+    background-color: rgb(108, 160, 123);
+    width: fit-content;
+    padding: 25px;
+    color: aliceblue;
+}
+.navbar> h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar> .icons > li> a > img{
+    width: 20px;
+    height: 20px;
+}
+.posts{
+    margin-bottom: 30px;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+    .right> img{
+        height: 150px;
+    }
+    .recent{
+        font-size: large;
+    }
+    .posts{
+        font-size: medium;
+    }
+    .left > img{
+        height: 300px;
+    }
+    a{
+        font-size: small;
+    }
+    .curh1{
+        font-size: larger;
+    }
+    .blog{
+        font-size: x-large;
+    }
+    .navbar> .icons > li> a > img{
+        width: 15px;
+        height: 15px;
+    }
+    .active{
+        padding: 20px 10px;
+    }
+    ul{
+        gap: 17px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+        .right> img{
+        height: 120px;
+    }
+    .recent{
+        font-size: smaller;
+    }
+    .posts{
+        font-size: small;
+    }
+    .left > img{
+        height: 220px;
+    }
+    a{
+        font-size: smaller;
+    }
+    .curh1{
+        font-size: medium;
+    }
+    .blog{
+        font-size: large;
+    }
+    .navbar> .icons > li> a > img{
+        width: 11px;
+        height: 11px;
+    }
+    .active{
+        padding: 16px 5px;
+    }
+    ul{
+        gap: 13px;
+    }
+    .left > p{
+        font-size: medium;
+    }
+    .right{
+        padding: 17px 12px;
+    }
+    .main{
+        gap: 15px;
+    }
+    .left> span{
+        font-size: small;
+    }
+    
+    
+}
+
+@media screen and (max-width: 570px) {
+      .right> img{
+        height: 150px;
+    }
+    .recent{
+        font-size: large;
+    }
+    .posts{
+        font-size: medium;
+    }
+    .left > img{
+        height: 250px;
+    }
+    a{
+        font-size: smaller;
+    }
+    .curh1{
+        font-size: medium;
+    }
+    .blog{
+        font-size: x-large;
+    }
+    .navbar> .icons > li> a > img{
+        width: 12px;
+        height: 12px;
+    }
+    .navbar> .icons {
+        gap: 10px;
+    }
+
+    .active{
+        padding: 10px 5px;
+    }
+    ul{
+        gap: 13px;
+        font-size: medium;
+    }
+    .left > p{
+        font-size: medium;
+    }
+    .right{
+        padding: 17px 12px;
+        width: 100%;
+
+    }
+    .left> span{
+        font-size: small;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-inline: 10px;
+    }
+    .left{
+        width: 100%;
+        padding: 12px;
+    }
+    .navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+}
